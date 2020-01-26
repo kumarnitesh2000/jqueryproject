@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQUERY | SELECTOR | Events</title>
+<script src="https://demo-bucket-sih.s3.amazonaws.com/js/jquery.js"></script>
+<script src="https://demo-bucket-sih.s3.amazonaws.com/js/main.js"></script>
+
+<style>
+.mainbox{
+background-color:lightgrey;
+
+height:450px;
+
+width:300px;
+margin-left:180px;
+margin-top:60px;
+border-radius:20px;
+}
+
+#loc{
+padding:8px;
+border-radius:20px;
+
+}
+#locm{
+padding:8px;
+border-radius:20px;
+}
+
+#locm:hover{
+background-color:#ff4500;
+}
+#lol{
+border-radius:60px;
+}
+
+#result{
+height:200px;
+width:600px;
+background-color:lightgrey;
+//display:none;
+border-radius:20px;
+}
+
+
+
+
+.part{
+background-color:#eee;
+font-size:18px;
+padding:5px;
+margin-top:4px;
+margin-left:3px;
+border-radius:8px;
+margin-right:5px;
+}
+.lat1{
+background-color:#eee;
+font-size:18px;
+padding:5px;
+margin-top:4px;
+margin-left:3px;
+border-radius:8px;
+margin-right:5px;
+}
+.long1{
+background-color:#eee;
+font-size:18px;
+padding:5px;
+margin-top:4px;
+margin-left:3px;
+border-radius:8px;
+margin-right:5px;
+}
+.bhan{
+color:black;
+margin-left:8px;
+padding-left:20px;
+padding-right:20px;
+background-color:#ff4500;
+
+}
+</style>
+
+</head>
+
+<body style="font-family:monospace;background-color:#eee;">
+
+<div style="font-size:40px;">Download the Partner
+<a href="https://demo-bucket-sih.s3.amazonaws.com/file.csv">List</a></div>
+<img id="lol" style="height:100px;width:100px;position:relative;top:100px;left:150px;z-index:1;" src="https://demo-bucket-sih.s3.amazonaws.com/images.jpg">
+<img id="lol" style="height:100px;width:100px;z-index:1;position:relative;top:100px;left:300px;" src="https://demo-bucket-sih.s3.amazonaws.com/index.jpg">
+
+
+<div class="mainbox">
+
+<form id="form">
+<input id="loc" class="lat" type="text" name="lat" placeholder="latitude" style="margin-left:70px;margin-top:117px;">
+<input id="loc" class="long" type="text" name="long" placeholder="longitude" style="margin-left:70px;margin-top:127px;">
+<input id="locm" type="submit" style="margin-left:100px;margin-top:122px;">
+
+</form>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<div id="result" style="width:550px;margin-left:20px;">
+<div class="box">
+<li style="color:white;">
+<div style="display:flex;">
+<div class="bhan part">Partner</div>
+<div class="bhan lat1">Long</div>
+<div class="bhan long1">Lati</div>
+</div>
+</li>
+</div>
+
+</div>
+</body>
+
+
+
+
+
+</html>
